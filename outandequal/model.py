@@ -1,7 +1,7 @@
 """outandequal model (database) API."""
 import sqlite3
 import flask
-import insta485
+import outandequal
 
 
 def dict_factory(cursor, row):
@@ -22,7 +22,7 @@ def get_db():
     """Open a new database connection."""
     if not hasattr(flask.g, 'sqlite_db'):
         flask.g.sqlite_db = sqlite3.connect(
-            insta485.app.config['DATABASE_FILENAME'])
+            outandequal.app.config['DATABASE_FILENAME'])
         flask.g.sqlite_db.row_factory = dict_factory
 
         # Foreign keys have to be enabled per-connection.  This is an sqlite3
