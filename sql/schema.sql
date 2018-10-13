@@ -1,10 +1,11 @@
 CREATE TABLE users(
   username VARCHAR(20) NOT NULL PRIMARY KEY,
-  fullname VARCHAR(40) NOT NULL,
+  firstname VARCHAR(40) NOT NULL,
+  lastname VARCHAR(40) NOT NULL,
   email VARCHAR(40) NOT NULL,
-  filename VARCHAR(64) NOT NULL,
-  password VARCHAR(256) NOT NULL,
-  created TIMESTAMP DEFAULT (DateTime('now'))
+  referralID INT NOT NULL,
+  ergCode INT,
+  password VARCHAR(256) NOT NULL
 );
 
 CREATE TABLE ERG_Information(
@@ -13,13 +14,16 @@ CREATE TABLE ERG_Information(
   ergSponsor INT NOT NULL,
   ergEmail VARCHAR(40) NOT NULL, 
   zipcode INTEGER NOT NULL,
-  ergDescription VARCHAR(150)
+  ergDescription VARCHAR(150),
+
+  FOREIGN KEY(ergSponsor) REFERENCES ERG_Sponsor(sponsorID) ON DELETE CASCADE
 );
 
 CREATE TABLE ERG_Sponsor(
   sponsorID INTEGER NOT NULL PRIMARY KEY,
   sponsorName VARCHAR(40) NOT NULL,
-  sponsorCEI REAL NOT NULL,
+  sponsorCEI REAL, 
+
   FOREIGN KEY(sponsorID) REFERENCES ERG_Information(ergSponsor) ON DELETE CASCADE
 );
 
@@ -31,6 +35,7 @@ CREATE TABLE posts(
 
   FOREIGN KEY(owner) REFERENCES users(username) ON DELETE CASCADE
 );
+
 
 CREATE TABLE following(
   username1 VARCHAR(20) NOT NULL,
