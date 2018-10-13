@@ -11,6 +11,7 @@ CREATE TABLE ERG_Information(
   ergID INTEGER NOT NULL PRIMARY KEY,
   ergName VARCHAR(100) NOT NULL,
   ergSponsor INT NOT NULL,
+  ergEmail VARCHAR(40) NOT NULL, 
   zipcode INTEGER NOT NULL,
   ergDescription VARCHAR(150)
 );
@@ -18,7 +19,6 @@ CREATE TABLE ERG_Information(
 CREATE TABLE ERG_Sponsor(
   sponsorID INTEGER NOT NULL PRIMARY KEY,
   sponsorName VARCHAR(40) NOT NULL,
-  sponsorEmail VARCHAR(40) NOT NULL, 
   sponsorCEI REAL NOT NULL,
   FOREIGN KEY(sponsorID) REFERENCES ERG_Information(ergSponsor) ON DELETE CASCADE
 );
