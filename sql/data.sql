@@ -48,4 +48,25 @@ VALUES('0','Disability to Some; Extraordinary Ability to Others','29 years ago, 
 ('6', 'JPMorgan Chase is committed to serving the unique needs of America’s military', 'In 2011, JPMorgan Chase and ten other companies launched the 100,000 Jobs Mission. The coalition has hired 241,833 Veterans through the first quarter of 2015 and grown to over 190 companies that represent almost every industry in the U.S. economy.'),
 ('8', 'Women on the Move: Creating a More Equitable World', 'Investing in the advancement of women is a key focus for JPMorgan Chase. That’s why we’re expanding our efforts on behalf of women inside and outside of the firm with Women on the Move. This is a global, firm-wide initiative that empowers female employees, clients, and consumers to build their careers, grow their businesses, and improve their financial health. ');
 
+INSERT INTO pdf(id, filename)
+VALUES('0', '101.pdf'),
+('1', '102.pdf'),
+('2', 'Allies1.pdf'),
+('3', 'Best-Practices1.pdf'),
+('4', 'Best-Practices2.pdf'),
+('5', 'Allies2.pdf'),
+('6', 'ERG1.pdf'),
+('7', 'ERG3.pdf'),
+('8', 'orientation_info4.pdf'),
+('9', 'Self-ID1.pdf'),
+('10', 'Self-ID2.pdf'),
+('11', 'Transgender1.pdf'),
+('12', 'Transgender2.pdf');
+
+INSERT INTO ppt(id, filename)
+VALUES('0', 'ERG2.pptx'),
+('1', 'orientation_info1.pptx'),
+('2', 'orientation_info2.pptx'),
+('3', 'orientation_info3.ppt'),
+('4', 'Self-ID3.pptx');
 

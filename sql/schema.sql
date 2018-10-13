@@ -65,3 +65,13 @@ CREATE TABLE likes(
   FOREIGN KEY(owner) REFERENCES	users(username) ON DELETE CASCADE
   FOREIGN KEY(postid) REFERENCES posts(postid) ON DELETE CASCADE
 );
+
+CREATE TABLE pdf(
+    id INTEGER NOT NULL,
+    filename VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE ppt(
+    id INTEGER NOT NULL,
+    filename VARCHAR(20) NOT NULL
+);
