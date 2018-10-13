@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name='outandequal',
     version='0.1.0',
-    packages=['insta485'],
+    packages=['outandequal'],
     include_package_data=True,
     install_requires=[
         'Flask==0.12.2',
