@@ -6,8 +6,8 @@ import uuid
 import tempfile
 import hashlib
 from flask import session
-import insta485
-from insta485.model import get_db
+import outandequal
+from outandequal.model import get_db
 
 
 def query_db(query, args=(), one=False):

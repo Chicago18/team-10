@@ -32,7 +32,7 @@ def get_db():
     return flask.g.sqlite_db
 
 
-@insta485.app.teardown_appcontext
+@outandequal.app.teardown_appcontext
 def close_db(error):
     # pylint: disable=unused-argument
     """Close the database at the end of a request."""
