@@ -55,7 +55,11 @@
             <li id="logout" style="display: none" class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/accounts/logout/">Logout</a>
             </li>
-            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/search/">Search</a>
+            <li id="search" style="display: none;" class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/search/">Search</a>
+            </li>
+            <li id="feed" style="display:none;" class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/feed/">Community</a>
+            </li>
+            <li id="map" class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/map/map/">Map</a>
             </li>
 
           </ul>
@@ -229,7 +233,7 @@
     </div>
 
     <!-- Portfolio Modals -->
-
+    <div id="loggedUserContent" style="display: none">
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
       <div class="portfolio-modal-dialog bg-white">
@@ -361,7 +365,7 @@
         </div>
       </div>
     </div>
-
+  </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -382,9 +386,15 @@
         var t1 = document.getElementById('register');
         var t2 = document.getElementById('login');
         var t3 = document.getElementById('logout');
+        var t4 = document.getElementById('loggedUserContent');
+        var t5 = document.getElementById('search')
+        var t6 = document.getElementById('feed')
         t1.style.display = 'none';
         t2.style.display = 'none';
         t3.style.display = 'block';
+        t4.style.display = 'block';
+        t5.style.display = 'block';
+        t6.style.display = 'block';
       }
     </script>
   </body>
