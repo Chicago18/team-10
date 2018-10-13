@@ -12,9 +12,7 @@ VALUES('1','awdeorio','3','#chickensofinstagram', DateTime('now')),
 ('2','jflinn','3','I <3 chickens', DateTime('now')),
 ('3','michjc','3','Cute overload!', DateTime('now')),
 ('4','awdeorio','2','Sick #crossword', DateTime('now')),
-('5','jflinn','1','Walking the plank #chickensofinstagram', DateTime('now')),
-('6','awdeorio','1','This was after trying to teach them to do a #crossword', DateTime('now')),
-('7','jag','4','Saw this on the diag yesterday!', DateTime('now'));
+('5','jflinn','1','Walking the plank #chickensofinstagram', DateTime('now'));
 
 INSERT INTO likes(owner, postid, created)
 VALUES('awdeorio', '1', DateTime('now')),
