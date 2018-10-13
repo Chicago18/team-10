@@ -13,4 +13,5 @@ from outandequal.helpers import query_db
 def show_index():
 	"""Display/Route"""
 	context = {}
+	context['loggedUser'] = session['username']
 	return render_template("index.html", **context)	

@@ -15,4 +15,5 @@ def show_map():
 	context = {}
 	zipcodes = query_db("SELECT DISTINCT zipcode FROM ERG_Information")
 	context['zipcodes'] = zipcodes
+	print (context)
 	return render_template("map.html", **context)
