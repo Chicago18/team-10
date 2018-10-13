@@ -7,6 +7,22 @@ CREATE TABLE users(
   created TIMESTAMP DEFAULT (DateTime('now'))
 );
 
+CREATE TABLE ERG_Information(
+  ergID INTEGER NOT NULL PRIMARY KEY,
+  ergName VARCHAR(100) NOT NULL,
+  ergSponsor INT NOT NULL,
+  zipcode INTEGER NOT NULL,
+  ergCEI REAL NOT NULL,
+  ergDescription VARCHAR(150)
+);
+
+CREATE TABLE ERG_Sponsor(
+  sponsorID INTEGER NOT NULL PRIMARY KEY,
+  sponsorName VARCHAR(40) NOT NULL,
+
+  FOREIGN KEY(sponsorID) REFERENCES ERG_Information(ergSponsor) ON DELETE CASCADE
+);
+
 CREATE TABLE posts(
   postid INTEGER NOT NULL PRIMARY KEY,
   filename VARCHAR(64) NOT NULL,
