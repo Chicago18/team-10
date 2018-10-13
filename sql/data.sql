@@ -31,15 +31,15 @@ VALUES('awdeorio', '1', DateTime('now')),
 ('awdeorio', '3', DateTime('now'));
 
 INSERT INTO ERG_Information(ergID, ergName, ergSponsor, ergEmail, zipcode, ergDescription) 
-VALUES('0', 'Access Ability', '0', 'AccessAbility@email.com', '60603', 'Fosters a greater awareness and appreciation of the unique backgrounds, styles and perspectives of people with disabilities. Membership is open to those affected by disabilities, care for people with disabilities, or are interested in disability issues.'),
-('1', 'Adelante', 'J.P. Morgan', 'Adelante@email.com', '60604', 'Promotes professional development and leadership opportunities for Hispanic and Latino employees.'),
-('2', 'AsPIRE', '0', 'AsPIRE@email.com', '60605', 'Enhances the professional development of employees of Asian heritage.'),
-('3', 'BOLD', '0', 'BOLD@email.com', '60606', 'Provides employees, and specifically those of African descent, with an empowering environment that focuses on professional and personal development in support of the companys business goals and initiatives.'),
-('4', 'NextGen', '0', 'NextGen@email.com', '60607','Serves as a forum for recent university graduates by providing professional development and mobility resources for early career professionals.'),
-('5', 'PRIDE', '0', 'PRIDE@mail.com', '60608', 'Engages and supports LGBT employees and allies, and helps management continue to promote an inclusive environment within the firm.'),
-('6', 'SAGE', '0', 'SAGE@email.com', '60609', 'Partners with all lines of business, globally and at all levels of management to promote professional excellence throughout the firm.'),
-('7', 'VETS', '0', 'VETS@email.com', '60610', 'Serves as a forum for military veterans, retirees, reservists, National Guard, military alumni and their supporters that focuses on the contributions that military veterans make to the firm and the community.'),
-('8', 'WIN', '0', 'WIN@email.com', '60611', 'Provides access to the tools that enable the successful, development, advancement and retention of women at all levels of the firm.');
+VALUES('0', 'Access Ability', '0', 'AccessAbility@email.com', '48104', 'Fosters a greater awareness and appreciation of the unique backgrounds, styles and perspectives of people with disabilities. Membership is open to those affected by disabilities, care for people with disabilities, or are interested in disability issues.'),
+('1', 'Adelante', 'J.P. Morgan', 'Adelante@email.com', '18914', 'Promotes professional development and leadership opportunities for Hispanic and Latino employees.'),
+('2', 'AsPIRE', '0', 'AsPIRE@email.com', '19807', 'Enhances the professional development of employees of Asian heritage.'),
+('3', 'BOLD', '0', 'BOLD@email.com', '55421', 'Provides employees, and specifically those of African descent, with an empowering environment that focuses on professional and personal development in support of the companys business goals and initiatives.'),
+('4', 'NextGen', '0', 'NextGen@email.com', '55116','Serves as a forum for recent university graduates by providing professional development and mobility resources for early career professionals.'),
+('5', 'PRIDE', '0', 'PRIDE@mail.com', '27514', 'Engages and supports LGBT employees and allies, and helps management continue to promote an inclusive environment within the firm.'),
+('6', 'SAGE', '0', 'SAGE@email.com', '83254', 'Partners with all lines of business, globally and at all levels of management to promote professional excellence throughout the firm.'),
+('7', 'VETS', '0', 'VETS@email.com', '49036', 'Serves as a forum for military veterans, retirees, reservists, National Guard, military alumni and their supporters that focuses on the contributions that military veterans make to the firm and the community.'),
+('8', 'WIN', '0', 'WIN@email.com', '29020', 'Provides access to the tools that enable the successful, development, advancement and retention of women at all levels of the firm.');
 
 INSERT INTO ERG_Sponsor(sponsorID, sponsorName, sponsorCEI)
 VALUES('0','J.P. Morgan', '100'),
