@@ -15,4 +15,4 @@ def query_db(query, args=(), one=False):
     cur = get_db().execute(query, args)
     row = cur.fetchall()
     cur.close()
-    return (row[0] if row else None) if one else rowj
+    return (row[0] if row else None) if one else row
