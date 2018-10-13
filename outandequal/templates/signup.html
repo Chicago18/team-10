@@ -1,19 +1,135 @@
 <!DOCTYPE html>
 <html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+.pleasework {
+	background-color: #474e5d;
+
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+ .modal-content {
+    background-color: #FFFFFF;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
 <head>
 	<title>Out &amp; Equal | Workplace Advocates </title>
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
-<body>
+<body class="pleasework">
 
 <div class="topnav">
-	 
+
 </div>
 
-<br>
 
-<div class="post" style="border-style: solid; border-radius: 5px">
-<form action="" method="post" enctype="multipart/form-data">
+<div  class="modal-content post" style="border-style: solid; border-radius: 5px">
+<form  action="" method="post" enctype="multipart/form-data">
+	<div class="container">
+	<h1>Register</h1>
+	<p>Please fill in this form to create an account.</p>
   <table cellspacing="7px" class="post">
 	<tbody>
 		<tr>
@@ -21,7 +137,7 @@
 		  	Referral ID
 		  <th>
 		  <td>
-			<input type="text" name="referralid"/> 
+			<input type="text" name="referralid"/>
 		  </td>
 		<tr>
         <tr>
@@ -29,7 +145,7 @@
 		  	ERG Sponsor Code
 		  <th>
 		  <td>
-			<input type="text" name="sponsor"/> 
+			<input type="text" name="sponsor"/>
 		  </td>
 		<tr>
         <tr>
@@ -37,7 +153,7 @@
 		  	Email
 		  <th>
 		  <td>
-			<input type="text" name="email"/> 
+			<input type="text" name="email"/>
 		  </td>
 		<tr>
 		<tr>
@@ -45,7 +161,7 @@
 		  	First Name
 		  <th>
 		  <td>
-			<input type="text" name="firstname"/> 
+			<input type="text" name="firstname"/>
 		  </td>
 		<tr>
         <tr>
@@ -53,9 +169,9 @@
 		  	Last Name
 		  <th>
 		  <td>
-			<input type="text" name="lastname"/> 
+			<input type="text" name="lastname"/>
 		  </td>
-         
+
 		<tr>
 		<tr>
 		  <th>
@@ -75,7 +191,12 @@
 		<tr>
 	</tbody>
   </table>
-  <input class="create" type="submit" name="signup" value="sign up"/>
+	<div class="clearfix">
+
+      <!--  <button type="submit" class="create" value="sign up">Sign Up</button>-->
+
+  <button class="create" type="submit" name="signup" value="sign up">Sign Up</button>
+</div>
 </form>
 <p class="create">Have an account? <a href="/accounts/login/">Log in</a></p>
 </div>
