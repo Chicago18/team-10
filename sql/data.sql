@@ -1,9 +1,3 @@
-INSERT INTO posts(postid, filename, owner, created)
-VALUES ('1', '122a7d27ca1d7420a1072f695d9290fad4501a41.jpg', 'awdeorio', DateTime('now')),
-('2', 'ad7790405c539894d25ab8dcf0b79eed3341e109.jpg', 'jflinn', DateTime('now')),
-('3', '9887e06812ef434d291e4936417d125cd594b38a.jpg', 'awdeorio', DateTime('now')),
-('4', '2ec7cf8ae158b3b1f40065abfb33e81143707842.jpg', 'jag', DateTime('now'));
-
 INSERT INTO following(username1, username2, created)
 VALUES('awdeorio', 'jflinn', DateTime('now')),
 ('awdeorio', 'michjc', DateTime('now')),
@@ -43,19 +37,15 @@ VALUES('0', 'Access Ability', '0', 'AccessAbility@email.com', '48104', 'Fosters 
 
 INSERT INTO ERG_Sponsor(sponsorID, sponsorName, sponsorCEI)
 VALUES('0','J.P. Morgan', '100'),
-('1','Costco Wholesale Corp.', '70')
+('1','Costco Wholesale Corp.', '70'),
 ('2', 'Bank of America Corp.', '100');
 
 INSERT INTO posts(owner, title, content)
 VALUES('0','Disability to Some; Extraordinary Ability to Others','29 years ago, I joined JPMorgan Chase with a secret – trusting no one and believing that if my secret ever leaked, it would stunt my professional growth.'),
-('1', 'Adelante named top employee resource group for Latinos', 'The Adelante business resource group at JPMorgan Chase has been recognized as the best of
-its kind by the U.S. Hispanic Chamber of Commerce. It eclipsed more than 80 other corporate
-hopefuls to take the top spot. '),
+('1', 'Adelante named top employee resource group for Latinos', 'The Adelante business resource group at JPMorgan Chase has been recognized as the best of its kind by the U.S. Hispanic Chamber of Commerce. It eclipsed more than 80 other corporate hopefuls to take the top spot. '),
 ('3','Being BOLD in Honor of Black History Month','Since joining JPMorgan Chase a decade ago as a senior executive assistant, Marlene Ruiz has made great strides in her career, thanks in part to her leadership in our firms Black Organization for Leadership Development (BOLD) program, a dynamic Business Resource Group with 23 global chapters.'),
 ('5', 'Pride is Paving the Way for Others', 'From the earliest age I can remember, diversity and acceptance had been ingrained in my family culture. My earliest memories are of working with people in my grandfather’s grocery store who were different than I was.'),
-('6', 'JPMorgan Chase is committed to serving the unique needs of America’s
-military', 'In 2011, JPMorgan Chase and ten other companies launched the 100,000 Jobs Mission. The coalition has hired 241,833 Veterans
-through the first quarter of 2015 and grown to over 190 companies that represent almost every industry in the U.S. economy.'),
-('8', 'Women on the Move: Creating a More Equitable World', 'Investing in the advancement of women is a key focus for JPMorgan Chase. That’s why we’re expanding our efforts on behalf of women inside and outside of the firm with Women on the Move. This is a global, firm-wide initiative that empowers female employees, clients, and consumers to build their careers, grow their businesses, and improve their financial health. ')
+('6', 'JPMorgan Chase is committed to serving the unique needs of America’s military', 'In 2011, JPMorgan Chase and ten other companies launched the 100,000 Jobs Mission. The coalition has hired 241,833 Veterans through the first quarter of 2015 and grown to over 190 companies that represent almost every industry in the U.S. economy.'),
+('8', 'Women on the Move: Creating a More Equitable World', 'Investing in the advancement of women is a key focus for JPMorgan Chase. That’s why we’re expanding our efforts on behalf of women inside and outside of the firm with Women on the Move. This is a global, firm-wide initiative that empowers female employees, clients, and consumers to build their careers, grow their businesses, and improve their financial health. ');
 
 
