@@ -36,3 +36,12 @@ VALUES('awdeorio', '1', DateTime('now')),
 ('michjc', '2', DateTime('now')),
 ('awdeorio', '3', DateTime('now'));
 
+INSERT INTO ERG_Information(ergID, ergName, ergSponsor, zipcode, ergEmail, ergDescription) 
+VALUES ('98312', 'Access Ability', 'J.P. Morgan', '60603', 'AccessAbility@email.com', 'Fosters a greater awareness and appreciation of the unique backgrounds, styles and perspectives of people with disabilities. Membership is open to those affected by disabilities, care for people with disabilities, or are interested in disability issues.'),('98313', 'Adelante', 'J.P. Morgan', '60603', 'Adelante@email.com', 'Promotes professional development and leadership opportunities for Hispanic and Latino employees.'), ('98314', 'AsPIRE', 'J.P. Morgan', '60603', 'AsPIRE@email.com', 'Enhances the professional development of employees of Asian heritage.'), ('98315', 'BOLD', 'J.P. Morgan', '60603', 'Provides employees, and specifically those of African descent, with an empowering environment that focuses on professional and personal development in support of the companys business goals and initiatives.'),
+('98316', 'NextGen', 'J.P. Morgan', '60603', 'NextGen@email.com', 'Serves as a forum for recent university graduates by providing professional development and mobility resources for early career professionals.'), ('98317', 'PRIDE', 'J.P. Morgan', '60603', , 'PRIDE@mail.com','Engages and supports LGBT employees and allies, and helps management continue to promote an inclusive environment within the firm.'), ('98318', 'SAGE', 'J.P. Morgan', '60603', 'SAGE@email.com', 'Partners with all lines of business, globally and at all levels of management to promote professional excellence throughout the firm.'), ('98319', 'VETS', 'J.P. Morgan', '60603', 'VETS@email.com', 'Serves as a forum for military veterans, retirees, reservists, National Guard, military alumni and their supporters that focuses on the contributions that military veterans make to the firm and the community.'), ('98320', 'WIN', 'J.P. Morgan', '60603', 'WIN@email.com', 'Provides access to the tools that enable the successful, development, advancement and retention of women at all levels of the firm.');
+
+INSERT INTO ERG_Sponsor(sponsorID, sponsorName, sponsorCEI)
+VALUES('89102','J.P. Morgan', '100'),
+VALUES('89103','Costco Wholesale Corp.', '70')
+;
+
