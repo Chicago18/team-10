@@ -13,6 +13,6 @@ from outandequal.helpers import query_db
 def show_map():
 	"""Show/loaded"""
 	context = {}
-	zipcodes = query_db("SELECT DISTINCT zipcodes FROM ERG_Information")
+	zipcodes = query_db("SELECT DISTINCT zipcode FROM ERG_Information")
 	context['zipcodes'] = zipcodes
 	render_template("map.html", **context)

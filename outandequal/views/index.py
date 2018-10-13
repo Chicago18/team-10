@@ -13,6 +13,4 @@ from outandequal.helpers import query_db
 def show_index():
 	"""Display/Route"""
 	context = {}
-	zipcodes = query_db("SELECT DISTINCT zipcodes FROM ERG_Information")
-	context['zipcodes'] = zipcodes
 	return render_template("index.html", **context)	
