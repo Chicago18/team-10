@@ -19,7 +19,8 @@ CREATE TABLE ERG_Information(
 CREATE TABLE ERG_Sponsor(
   sponsorID INTEGER NOT NULL PRIMARY KEY,
   sponsorName VARCHAR(40) NOT NULL,
-  sponsorCEI REAL NOT NULL,
+  sponsorCEI REAL, 
+
   FOREIGN KEY(sponsorID) REFERENCES ERG_Information(ergSponsor) ON DELETE CASCADE
 );
 
@@ -31,6 +32,7 @@ CREATE TABLE posts(
 
   FOREIGN KEY(owner) REFERENCES users(username) ON DELETE CASCADE
 );
+
 
 CREATE TABLE following(
   username1 VARCHAR(20) NOT NULL,
