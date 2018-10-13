@@ -23,17 +23,14 @@ CREATE TABLE ERG_Sponsor(
   sponsorID INTEGER NOT NULL PRIMARY KEY,
   sponsorName VARCHAR(40) NOT NULL,
   sponsorCEI REAL, 
-
   FOREIGN KEY(sponsorID) REFERENCES ERG_Information(ergSponsor) ON DELETE CASCADE
 );
 
 CREATE TABLE posts(
-  postid INTEGER NOT NULL PRIMARY KEY,
-  filename VARCHAR(64) NOT NULL,
-  owner VARCHAR(20) NOT NULL,
-  created TIMESTAMP DEFAULT (DateTime('now')),
-
-  FOREIGN KEY(owner) REFERENCES users(username) ON DELETE CASCADE
+  owner INTEGER NOT NULL PRIMARY KEY,
+  title VARCHAR(64) NOT NULL,
+  content VARCHAR(20) NOT NULL,
+  FOREIGN KEY(owner) REFERENCES ERG_Information(ergID) ON DELETE CASCADE
 );
 
 
