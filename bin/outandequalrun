@@ -1,0 +1,21 @@
+#!/bin/bash
+# outandequalrun
+
+
+# Stop on errors
+set -e
+
+# Running
+echo "Running OutandEqual"
+
+# Set the database to create
+./bin/outandequaldb reset
+
+# Set flask tags
+export FLASK_DEBUG=True
+export FLASK_APP=outandequal
+export OUTANDEQUAL_SETTINGS=config.py
+
+# launch to http://localhost:8000/
+flask run --host 0.0.0.0 --port 8000
+
