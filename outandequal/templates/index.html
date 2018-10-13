@@ -46,11 +46,14 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
             </li>
-            <li class="nav-item mx-0 mx-lg-1">
+            <li id="register" class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/accounts/create/">Register</a>
             </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/accounts/login/">Sign In</a>
+            <li id="login" class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/accounts/login/">Login</a>
+            </li>
+            <li id="logout" style="display: none" class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/accounts/logout/">Logout</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/search/">Search</a>
             </li>
@@ -373,7 +376,17 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
-
+    <script>
+      var loggedUser = {{ loggedUser|tojson|safe }};
+      if(loggedUser){
+        var t1 = document.getElementById('register');
+        var t2 = document.getElementById('login');
+        var t3 = document.getElementById('logout');
+        t1.style.display = 'none';
+        t2.style.display = 'none';
+        t3.style.display = 'block';
+      }
+    </script>
   </body>
 
 </html>
