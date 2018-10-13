@@ -29,20 +29,43 @@
         line-height: 30 px;
         padding-left: 10 px;
       }
+
+      #centerDiv{
+        width: 0%;
+        top: 50%;
+        position: relative;
+        transform: translateY(-400%);
+        margin-right: auto;
+        margin-left: auto;
+      }
     </style>
   </head>
   <body>
     <div id="map"></div>
     <div id="floating-panel">
-      <input id="address" type="textbox" value="Enter a zipcode">
-      <input id="submit" type="button" value="Geocode">
+      <div id="centerDiv">
+        <table cellspacing="8">
+          <tr>
+            <td>
+              <input id="address" type="textbox" placeholder="Enter a zipcode">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="submit" type="button" value="Geocode">
+            </td>
+          </tr>
+        </table>  
+      </div>
     </div>
+
+
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 2,
-          center: new google.maps.LatLng(2.8,-187.3),
+          zoom: 4,
+          center: new google.maps.LatLng(42.877742,-97.380979),
           mapTypeId: 'terrain'
         });
 
@@ -63,7 +86,7 @@
               position: results[0].geometry.location
             });
           }
-        };
+        });
       }
 
       for(zip in zipcodes){

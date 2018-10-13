@@ -9,10 +9,10 @@ import outandequal
 from outandequal.helpers import query_db
 
 
-@outandequal.app.route('/map/', methods=['GET', 'POST'])
+@outandequal.app.route('/map/map/', methods=['GET', 'POST'])
 def show_map():
 	"""Show/loaded"""
 	context = {}
 	zipcodes = query_db("SELECT DISTINCT zipcode FROM ERG_Information")
 	context['zipcodes'] = zipcodes
-	render_template("map.html", **context)
+	return render_template("map.html", **context)
