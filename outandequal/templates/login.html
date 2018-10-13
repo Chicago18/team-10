@@ -134,10 +134,13 @@ hr {
 <div class="modal-content post" style="border-style: solid; border-radius: 5px">
 
 	<form action="" method="post" enctype="multipart/form-data">
-	  <table cellspacing="7px" class="post">
+	  <table cellspacing="7px" cellpadding="5" class="post">
 	  	<tbody>
-				<h1>Login</h1>
-
+            <tr>
+                <td>
+				<h1 style="margin-left: 25px">Login</h1>
+                <td>
+            </tr>
 	  		<tr>
 				<th>
 					Username
@@ -154,21 +157,17 @@ hr {
 					<input type="password" name="password" placeholder="password"/>
 				</td>
 	  		</tr>
-
-     <tr>
+            <tr>
 			 <td>
+                <button class="create" style="margin-left: 25px" type="submit" value="login">Login</button>
 
-
-        <button class="create" type="submit" value="login">Login</button>
-
-	</td>
-	</tr>
+	         </td>
+        	</tr>
 		</tbody>
 		</table>
 	</form>
 
-	<p class="create">Don't have an account?
-    <a href="/accounts/create">Sign up</a></p>
+	<p class="create" style="float:right; color: white">Don't have an account?<a style="color:lightblue" href="/accounts/create">Sign up</a></p>
 </div>
 </body>
 </html>

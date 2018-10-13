@@ -37,16 +37,19 @@
 				</div>
 
 			    <div class="col-sm-9 col-md-6 col-lg-8">
+			    	{% for post in posts %}
 			    	<div style="border:3px; border-style:solid; border-color:black; padding: 1em; float:center;">
-		  	 	 		<h1>LGBTQ ERG</h1>
-		  	 	 			<p> EAGLE Philippines is one of the first LGBTQ ERGs in the Philippines. The group not only supports IBM’s global strategies in diversity and inclusion through recruitment, talent retention, talent development, and market development, but has also become an informal support group by giving LGBTQ employees and allies a sense of community. </p>
+		  	 	 		<h1> {{ post.title }} </h1>
+		  	 	 		<h4> ERG: {{ post.ownerName }} </h4>
+		  	 	 			<p> {{ post.content }} </p>
 
 		  	 	 			<p> Like  |  Comment </p>
 		  	 	 	</div>
+		  	 	 	 	<br>
+		  	 	 	{% endfor %}
+
 				</div>
 			</div>
 		</div>
-
-	</body>
-
+	</body>	
 </html>
